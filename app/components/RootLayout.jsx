@@ -166,7 +166,7 @@ const RootLayoutInner = ({ children }) => {
         style={{ height: expanded ? "auto" : "0.5rem" }}
         className="relative z-50 overflow-hidden bg-black pt-2"
           aria-hidden={expanded ? undefined : "true"}
-          inert={expanded ? undefined : ""}
+          inert={!expanded}
         >
         <motion.div layout className="bg-neutral-950">
           <div ref={navRef} className="bg-black pb-16 pt-14">
