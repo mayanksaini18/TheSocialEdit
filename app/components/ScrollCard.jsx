@@ -1,29 +1,66 @@
-"use client";
-
-import { motion, useScroll, useTransform } from "framer-motion";
-import Container from "@/app/components/Container";
-
+"use client"
 import { useRef } from "react";
+import { useScroll } from "framer-motion";
+import RightCards from "./RightCards";
 
+export default function MarketingSection() {
+  const containerRef = useRef(null);
 
-
-
-import StickyLeft from "./StickyLeft";
-import RightCards from "./RightCards"
-export default function ServicesScroll() {
-  const ref = useRef(null);
-
+  // Track scroll progress relative to this specific container
   const { scrollYProgress } = useScroll({
-    target: ref,
+    target: containerRef,
     offset: ["start start", "end end"],
+
   });
 
   return (
-    <section ref={ref} className="bg-[#f7f6f2] py-32">
-      <Container className="grid grid-cols-1 gap-16 lg:grid-cols-2">
-        <StickyLeft />
-        <RightCards scrollYProgress={scrollYProgress} />
-      </Container>
+    <section ref={containerRef} className="relative h-[300vh] bg-white pt-5">
+      {/* The grid container is sticky. 
+        It stays locked to the viewport while we scroll through the 300vh height.
+      */}
+      <div className="sticky top-0 grid grid-cols-1 gap-10 overflow-hidden px-6 lg:grid-cols-2 lg:px-20">
+        
+        {/* LEFT COLUMN: Static Text */}
+        <div className="flex items-center justify-center">
+          <StickyLeft />
+        </div>
+
+        {/* RIGHT COLUMN: Animated Cards */}
+        <div className="flex items-center justify-center">
+          <RightCards scrollYProgress={scrollYProgress} />
+        </div>
+        
+      </div>
     </section>
+  );
+}
+
+function StickyLeft() {
+  return (
+    <div className="flex h-fit flex-col justify-center p-8">
+      <p className="mb-4 text-sm text-neutral-500">
+        Digital marketing agency that are
+      </p>
+
+      <h2 className="text-5xl font-medium leading-tight text-neutral-900 sm:text-6xl">
+        Jack of all trades,
+        <br />
+        master of results!
+      </h2>
+
+      <p className="mt-6 max-w-md text-neutral-600">
+        We wear many hats (and rock them all), but at the end of the day we get
+        the job done, no matter the challenge!
+      </p>
+
+      <div className="mt-10 flex items-center gap-4">
+        <button className="rounded-full bg-black px-6 py-3 text-white transition hover:bg-neutral-800">
+          Talk to us.
+        </button>
+        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 text-black transition hover:scale-110 cursor-pointer">
+          ↗
+        </span>
+      </div>
+    </div>
   );
 }
