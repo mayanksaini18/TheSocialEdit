@@ -20,8 +20,7 @@ const MotionCard = ({ title, y, z, bg = "bg-[#e9e9dd]" }) => {
         Know More <span>↗</span>
       </a>
     </motion.div>
-
-    //todo add teh smooth animationtion
+    
   );
 };
 
