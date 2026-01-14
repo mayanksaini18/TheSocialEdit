@@ -1,60 +1,76 @@
-// components/InnovationSection.tsx
+import React from "react";
+import Container from "@/app/components/Container";
+import FadeIn, { FadeInStagger } from "@/app/components/FadeIn";
+import Border from "@/app/components/Border";
 
 export default function InnovationSection() {
   return (
-    <section className="bg-black text-white px-6 py-20">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        
-        {/* LEFT */}
-        <div className="flex-1 space-y-5">
-          <h2 className="text-4xl font-semibold">
-            We live inside a circle of Innovation
-          </h2>
-          <p className="text-gray-300">
-            As the best digital marketing company in Bangalore, we believe that
-            innovation lies in continuous evolution. We learn, we plan,
-            we do, we check, we repeat…
-          </p>
+    <section className="bg-black text-white py-20">
+      <Container>
+        <div className="flex flex-col items-center gap-10 md:flex-row">
+          {/* LEFT */}
+          <div className="flex-1 space-y-5">
+            <FadeIn>
+              <h2 className="font-display text-4xl font-medium">
+                We live inside a circle of Innovation
+              </h2>
+              <p className="text-neutral-300">
+                As the best digital marketing company in Bangalore, we believe
+                that innovation lies in continuous evolution. We learn, we plan,
+                we do, we check, we repeat…
+              </p>
 
-          <button className="bg-yellow-400 text-black font-medium px-5 py-2 rounded-full inline-flex items-center gap-2">
-            Know More <span>→</span>
-          </button>
-        </div>
+              <button className="inline-flex items-center gap-2 rounded-full bg-yellow-400 px-5 py-2 font-medium text-black transition hover:bg-yellow-300">
+                Know More <span>→</span>
+              </button>
+            </FadeIn>
+          </div>
 
-        {/* RIGHT - Circle Graphic Placeholder */}
-        <div className="flex-1 flex justify-center">
-          <div className="w-64 h-64 rounded-full border-[3px] border-gray-500 flex items-center justify-center">
-            <span className="text-sm text-gray-400">Circle Graphic</span>
+          {/* RIGHT - Circle Graphic Placeholder */}
+          <div className="flex flex-1 justify-center">
+            <FadeIn>
+              <img
+                src="https://innovkraft.com/wp-content/uploads/2025/04/Circle-of-innovation-1.png"
+                alt="Circle of Innovation"
+                className="w-full max-w-sm"
+              />
+            </FadeIn>
           </div>
         </div>
-      </div>
 
-      {/* SHOW-OFF CARDS */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-16">
-        <Card title="200+" subtitle="Clients Served" />
-        <Card title="🏆 DesignRush" subtitle="Best Web Design Award" />
-        <Card title="300+" subtitle="Projects Completed" />
-        <Card title="⭐ 4.8" subtitle="Rated on Google" />
-      </div>
+        {/* SHOW-OFF CARDS */}
+        <FadeInStagger className="mt-24">
+          <dl className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <Stat value="200+" label="Clients Served" />
+            <Stat value="DesignRush" label="Best Web Design Award" />
+            <Stat value="300+" label="Projects Completed" />
+            <Stat value="4.8" label="Rated on Google" />
+          </dl>
+        </FadeInStagger>
 
-      {/* BOTTOM CTA */}
-      <div className="max-w-6xl mx-auto mt-14 bg-transparent border border-gray-700 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between">
-        <p className="text-lg text-gray-200">
-          We’re getting a feeling you like us already!
-        </p>
-        <button className="bg-yellow-400 text-black font-medium px-6 py-2 rounded-full inline-flex items-center gap-2 mt-4 md:mt-0">
-          Contact us <span>→</span>
-        </button>
-      </div>
+        {/* BOTTOM CTA */}
+        <FadeIn>
+          <div className="mt-14 flex flex-col items-center justify-between rounded-2xl border border-neutral-700 bg-transparent p-6 md:flex-row">
+            <p className="text-lg text-neutral-200">
+              We’re getting a feeling you like us already!
+            </p>
+            <button className="mt-4 inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-2 font-medium text-black transition hover:bg-yellow-300 md:mt-0">
+              Contact us <span>→</span>
+            </button>
+          </div>
+        </FadeIn>
+      </Container>
     </section>
   );
 }
 
-function Card({ title, subtitle }: { title: string; subtitle: string }) {
+function Stat({ value, label }) {
   return (
-    <div className="p-5 bg-[#141414] rounded-xl border border-gray-800">
-      <h3 className="text-2xl font-semibold">{title}</h3>
-      <p className="text-sm text-gray-400">{subtitle}</p>
-    </div>
+    <Border as={FadeIn} position="left" className="flex flex-col-reverse pl-8" invert>
+      <dt className="text-base text-neutral-300">{label}</dt>
+      <dd className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+        {value}
+      </dd>
+    </Border>
   );
 }
