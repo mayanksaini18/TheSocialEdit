@@ -8,7 +8,7 @@ const MotionCard = ({ title, y, z, bg = "bg-[#e9e9dd]" }) => {
       // It's positioned absolutely within the relative parent in RightCards.jsx
       className={`absolute inset-0 ${z} ${bg} rounded-3xl p-10 flex flex-col justify-end shadow-sm`}
     >
-      <h3 className="text-3xl font-medium text-neutral-800">
+      <h3 className="font-display text-3xl font-medium text-neutral-950">
         {title}
       </h3>
 
