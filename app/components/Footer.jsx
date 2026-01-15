@@ -1,10 +1,9 @@
-import React from "react";
 import Container from "@/app/components/Container";
 import FadeIn from "@/app/components/FadeIn";
 import FooterNavigation from "@/app/components/FooterNavigation";
 import Link from "next/link";
 
-const ArrowIcon = (props) => {
+function ArrowIcon(props) {
   return (
     <svg viewBox="0 0 16 6" aria-hidden="true" {...props}>
       <path
@@ -15,17 +14,16 @@ const ArrowIcon = (props) => {
       />
     </svg>
   );
-};
+}
 
-const NewsletterForm = () => {
+function NewsletterForm() {
   return (
     <form className="max-w-sm">
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>
       <p className="mt-4 text-sm text-neutral-700">
-        Subscribe to get the latest design news, articles, resources and
-        inspiration.
+        Subscribe to get the latest news, articles, and resources, sent to your inbox weekly.
       </p>
       <div className="relative mt-6">
         <input
@@ -47,41 +45,28 @@ const NewsletterForm = () => {
       </div>
     </form>
   );
-};
-
-function FooterCTA() {
-  return (
-    <div className="bg-[#F7F7F3] py-24 sm:py-32">
-      <Container>
-        <FadeIn>
-          <div className="max-w-2xl">
-            <h2 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl sm:leading-tight">
-              IDEA? <br /> STOP THINKING. <br /> START GROWING.
-            </h2>
-            <Link
-              href="/contact"
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-3 font-medium text-black transition hover:bg-yellow-300"
-            >
-              Contact Us <span>→</span>
-            </Link>
-          </div>
-        </FadeIn>
-      </Container>
-    </div>
-  );
 }
 
 const Footer = () => {
   return (
     <footer className="mt-24 w-full sm:mt-32 lg:mt-40">
-      <FooterCTA />
-      <Container className="mt-24">
+      <Container>
         <FadeIn>
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-            <FooterNavigation />
-            <div className="flex lg:justify-end">
-              <NewsletterForm />
+            <div className="flex flex-col gap-10">
+              <div>
+                <h2 className="font-display text-2xl font-semibold tracking-wider text-neutral-950">
+                  IDEA? <br /> STOP THINKING. <br /> START GROWING.
+                </h2>
+                <Link
+                  href="/contact"
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-yellow-400 px-6 py-2 font-medium text-black transition hover:bg-yellow-300"
+                >
+                  Contact us <span>→</span>
+                </Link>
+              </div>
             </div>
+            <FooterNavigation />
           </div>
           <div className="mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
             <Link
@@ -106,5 +91,4 @@ const Footer = () => {
     </footer>
   );
 };
-
 export default Footer;
