@@ -4,12 +4,10 @@ import { useEffect, useId, useRef, useState } from "react";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import Container from "@/app/components/Container";
 import Link from "next/link";
-import Logo from "@/app/components/Logo";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
 import Button from "@/app/components/Button";
 import clsx from "clsx";
-import Offices from "@/app/components/Offices";
 import SocialMedia from "@/app/components/SocialMedia";
 import Footer from "@/app/components/Footer";
 

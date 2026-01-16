@@ -1,5 +1,23 @@
-import { navigation } from "@/app/constants";
 import Link from "next/link";
+
+const navigation = [
+  {
+    title: "Work",
+    links: [
+      { title: "Our Work", href: "/work" },
+      { title: "Services", href: "/services" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { title: "About", href: "/about" },
+      { title: "Process", href: "/process" },
+      { title: "Blog", href: "/blog" },
+      { title: "Contact", href: "/contact" },
+    ],
+  },
+];
 
 const FooterNavigation = () => {
   return (

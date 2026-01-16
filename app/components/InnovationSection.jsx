@@ -1,7 +1,6 @@
 import React from "react";
 import Container from "@/app/components/Container";
 import FadeIn, { FadeInStagger } from "@/app/components/FadeIn";
-import Border from "@/app/components/Border";
 
 export default function InnovationSection() {
   return (
@@ -66,11 +65,11 @@ export default function InnovationSection() {
 
 function Stat({ value, label }) {
   return (
-    <Border as={FadeIn} position="left" className="flex flex-col-reverse pl-8" invert>
+    <FadeIn className="flex flex-col-reverse border-l border-neutral-800 pl-8">
       <dt className="text-base text-neutral-300">{label}</dt>
       <dd className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl">
         {value}
       </dd>
-    </Border>
+    </FadeIn>
   );
 }
