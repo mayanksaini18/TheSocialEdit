@@ -10,7 +10,7 @@ const ProcessPage = () => {
   return (
     <>
 
-    {/* 
+    
       <PageIntro eyebrow="Our process" title="How we work">
         <p>
           We believe in efficiency and maximizing our resources to provide the
@@ -28,7 +28,7 @@ const ProcessPage = () => {
      
       <Values />
       <ContactSection />
-      */}
+     
       </>
     );
   };
