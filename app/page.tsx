@@ -2,12 +2,15 @@ import Container from "@/app/components/Container";
 import FadeIn from "@/app/components/FadeIn";
 import ScrollCard from "@/app/components/ScrollCard";
 import InnovationSection from "@/app/components/InnovationSection";
-
+import HeroSection from "./components/HeroSection";
+import FaqSection from "./components/FaqSection";
 export default function Home() {
   return (
     <main className="text-neutral-100">
+          <HeroSection/>
       <Container className="mt-24 sm:mt-32">
         <FadeIn className="max-w-3xl">
+     
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-600 text-balance sm:text-7xl">
             Elevating Brands with{" "}
             <span className="text-yellow-500">Content</span>,{" "}
@@ -23,6 +26,7 @@ export default function Home() {
       </Container>
       <ScrollCard />
       <InnovationSection />
+      <FaqSection/>
     </main>
   );
 }
