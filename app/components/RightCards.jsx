@@ -16,31 +16,34 @@ export default function RightCards({ scrollYProgress }){
   return (
     // Container must be relative so cards can be absolute inside it.
     // The parent div in ScrollCard.jsx will center this.
-    <div className="relative h-[450px] w-full max-w-md ">
+    <div className="relative h-[450px] w-full max-w-md">
       
-      {/* CARD 1: Base Layer (Z-10) - Static */}
-      <MotionCard 
-        title="Performance Marketing" 
-        bg="bg-neutral-200" // Using theme-appropriate colors
-        z="z-10" 
-      />
+  
+  <MotionCard
+  title="Content Creation"
+  sub="Ideate → Script → Edit → Publish, all done for you."
+  bgImage="/images/content.jpg"
+  z="z-10"
+/>
 
-      {/* CARD 2: Middle Layer (Z-20) - Slides Up */}
-      <MotionCard 
-        title="Branding" 
-        bg="bg-neutral-300" // Using theme-appropriate colors
-        z="z-20" 
-        y={y2} 
-      />
+<MotionCard
+  title="Graphic Design"
+  sub="Brochures, pitch decks, and brand assets for credibility from day one."
+  bgImage="/images/design.jpg"
+  z="z-20"
+  y={y2}
+/>
 
-      {/* CARD 3: Top Layer (Z-30) - Slides Up */}
-      <MotionCard 
-        title="UI/UX Design" 
-        bg="bg-[#e9e9dd]" // The final card has the main off-white color
-        z="z-30" 
-        y={y3} 
-      />
-      
-    </div>
+<MotionCard
+  title="UI/UX Design"
+  sub="GTM-ready UX for websites, apps, and MVPs that convert."
+  bgImage="/images/uiux.jpg"
+  z="z-30"
+  y={y3}
+/>
+
+
+</div>
+
   );
 };
