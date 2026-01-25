@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const MotionCard = ({ title, y, z, bg = "bg-[#e9e9dd]" }) => {
+const MotionCard = ({ title,sub , y, z, bg = "bg-[#e9e9dd]" }) => {
   return (
     <motion.div
       style={{ y }}
@@ -13,7 +13,7 @@ const MotionCard = ({ title, y, z, bg = "bg-[#e9e9dd]" }) => {
       </h3>
 
       <p className="mt-4 text-neutral-600">
-        High-impact solutions designed to scale your brand effectively.
+        {sub}
       </p>
 
       <a className="mt-6 inline-flex items-center gap-2 text-sm underline text-neutral-800">
