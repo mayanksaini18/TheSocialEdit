@@ -18,8 +18,19 @@ const HeroSection = () => {
         
         {/* Main Headline - Replicating the "NOT ANOTHER AGENCY" style */}
         <h1 className="flex flex-col text-5xl font-black uppercase leading-[0.9] tracking-tighter text-black md:text-7xl lg:text-[7rem]">
-          You build the brand. We build the presence.
-        </h1> 
+          You build the brand.
+        </h1>
+
+        {/* Subtext - Replicating the "Strategic solutions" text */}
+        <p className="max-w-xl text-lg font-medium text-neutral-600 md:text-xl">
+          Strategic solutions for lasting impact.
+        </p>
+
+        {/* The additional copy you requested */}
+        <p className="max-w-2xl text-base text-neutral-500 md:text-lg">
+          We build the presence
+        </p>
+
         {/* CTAs using Shadcn styling */}
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
           <button size="lg" className="h-12 px-8 text-base font-semibold uppercase tracking-wide">
