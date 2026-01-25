@@ -23,7 +23,7 @@ const HeroSection = () => {
 
         {/* Subtext - Replicating the "Strategic solutions" text */}
         <p className="max-w-xl text-lg font-medium text-neutral-600 md:text-xl">
-          Strategic solutions for lasting impact.
+          Presence for startups and creators—built from day one.”
         </p>
 
         {/* CTAs using Shadcn styling */}
