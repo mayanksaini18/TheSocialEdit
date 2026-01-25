@@ -100,7 +100,7 @@ const WorkSection = () => {
         <div className="mb-16 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <h2 className="text-5xl font-black uppercase tracking-tighter text-white md:text-7xl">
-              Selected <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Work</span>
+              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">Work</span>
             </h2>
             <p className="mt-6 text-lg text-neutral-400 max-w-lg">
               A curation of our best edits. We turn raw footage into scrolling-stopping content for brands that dare to be different.
