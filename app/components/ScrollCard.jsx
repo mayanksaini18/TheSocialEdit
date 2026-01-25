@@ -31,7 +31,7 @@ export default function MarketingSection() {
 
 function StickyLeft() {
   return (
-    <div className="flex h-fit flex-col justify-center p-8">
+    <div className="flex my-5 flex-col justify-center p-10">
       <p className="mb-4 text-sm text-neutral-500">
         Digital marketing agency that are
       </p>
