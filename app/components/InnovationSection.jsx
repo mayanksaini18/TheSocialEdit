@@ -4,9 +4,9 @@ import FadeIn, { FadeInStagger } from "@/app/components/FadeIn";
 
 export default function InnovationSection() {
   return (
-    <section className="mt-24 rounded-t-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <section className="rounded-t-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
-        <div className="flex flex-col items-center gap-10 md:flex-row">
+        <div className="flex flex-col items-center md:flex-row">
           {/* LEFT */}
           <div className="flex-1 space-y-5">
             <FadeIn>
