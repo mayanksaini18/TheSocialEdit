@@ -8,9 +8,8 @@ import WorkSection from "./components/WorkSection";
 export default function Home() {
   return (
     <main className="text-neutral-100">
-          <HeroSection/>
-      
-          <ScrollCard />
+      <HeroSection/>
+      <ScrollCard />
       <InnovationSection />
       <WorkSection/>
       <FaqSection/>
