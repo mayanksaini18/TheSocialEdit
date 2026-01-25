@@ -1,6 +1,6 @@
 import PageIntro from "../components/PageIntro";
 import React from "react";
-
+import WorkSection from "../components/WorkSection";
 const WorkPage = () => {
   return (
     <>
@@ -14,6 +14,8 @@ const WorkPage = () => {
           the same five projects we’ve been developing for the past decade.
         </p>
       </PageIntro>
+      
+      <WorkSection/>
     </>
   );
 };
