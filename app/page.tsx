@@ -8,13 +8,9 @@ export default function Home() {
   return (
     <main className="text-neutral-100">
           <HeroSection/>
-      <Container className="mt-24 sm:mt-32">
-        <FadeIn className="max-w-3xl">
-     
-          <ScrollCard />
-        </FadeIn>
-      </Container>
       
+          <ScrollCard />
+    
       <InnovationSection />
       <FaqSection/>
     </main>
