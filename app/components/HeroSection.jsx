@@ -26,17 +26,15 @@ const HeroSection = () => {
           Strategic solutions for lasting impact.
         </p>
 
-
-
         {/* CTAs using Shadcn styling */}
-        <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-          <button size="lg" className="h-12 px-8 text-base font-semibold uppercase tracking-wide">
-            Start Your Project
-          </button>
-          <button  size="lg" className="group h-12 gap-2 border-neutral-400 px-8 text-base font-semibold uppercase tracking-wide hover:bg-white">
-            View Work <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </button>
-        </div>
+        <div className="mt-10 flex items-center gap-4">
+        <button className="rounded-full bg-black px-6 py-3 text-white transition hover:bg-neutral-800">
+          Our Work.
+        </button>
+        <span className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 text-black transition hover:scale-110 cursor-pointer">
+          ↗
+        </span>
+      </div>
       </div>
     </section>
   );
