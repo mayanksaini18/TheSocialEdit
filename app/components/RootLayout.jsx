@@ -27,13 +27,13 @@ const Header = ({
         <Link href="/" aria-label="Home" className="flex flex-col leading-none">
           <span
             className={clsx(
-              "text-xs italic tracking-wide",
+              "text-xs italic font-extrabold tracking-wide",
               invert ? "text-white" : "text-black"
             )}
           >
             THE
           </span>
-          <span className="text-2xl font-semibold italic text-yellow-500">
+          <span className="text-2xl font-extrabold italic text-yellow-500">
             SOCIAL EDIT
           </span>
         </Link>
