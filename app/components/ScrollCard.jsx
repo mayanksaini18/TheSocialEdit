@@ -33,7 +33,7 @@ function StickyLeft() {
   return (
     <div className="flex my-5 flex-col justify-center p-10">
       <p className="mb-4 text-sm text-neutral-500">
-        Digital marketing agency that are
+       - Not Another marketing agency 
       </p>
 
       <h2 className="font-display text-5xl font-medium leading-tight text-neutral-950 sm:text-6xl">
@@ -43,8 +43,8 @@ function StickyLeft() {
       </h2>
 
       <p className="mt-6 max-w-md text-neutral-600">
-        We wear many hats (and rock them all), but at the end of the day we get
-        the job done, no matter the challenge!
+        No fluff. No templates.
+        Just work that builds your brand.
       </p>
 
       <div className="mt-10 flex items-center gap-4">
