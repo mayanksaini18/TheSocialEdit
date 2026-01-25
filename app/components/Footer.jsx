@@ -74,7 +74,7 @@ const Footer = () => {
               aria-label="Home"
               className="flex flex-col leading-none"
             >
-              <span className="text-xs italic tracking-wide text-black">
+              <span className="text-xs  font-extrabold italic tracking-wide text-black">
                 THE
               </span>
               <span className="text-2xl font-semibold italic text-yellow-500">

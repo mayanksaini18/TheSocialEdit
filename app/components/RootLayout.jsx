@@ -224,7 +224,6 @@ const RootLayoutInner = ({ children }) => {
       </motion.div>
     </MotionConfig>
   );
-
 };
 
 const RootLayout = ({ children }) => {
