@@ -22,14 +22,15 @@ export default function RightCards({ scrollYProgress }){
   <MotionCard
   title="Content Creation"
   sub="Ideate → Script → Edit → Publish, all done for you."
-  bgImage="/images/content.jpg"
+  // bg="bg-[url('https://res.cloudinary.com/ddpydxytb/image/upload/v1769330385/content_creation_cznfkq.png')] bg-cover bg-center"
   z="z-10"
 />
 
 <MotionCard
   title="Graphic Design"
   sub="Brochures, pitch decks, and brand assets for credibility from day one."
-  bgImage="/images/design.jpg"
+  bg="bg-[url('https://res.cloudinary.com/ddpydxytb/image/upload/v1769330385/Graphic_Design_ro0t6h.png')] bg-cover bg-center"
+
   z="z-20"
   y={y2}
 />
@@ -37,10 +38,12 @@ export default function RightCards({ scrollYProgress }){
 <MotionCard
   title="UI/UX Design"
   sub="GTM-ready UX for websites, apps, and MVPs that convert."
-  bgImage="/images/uiux.jpg"
+  bg="bg-[url('https://res.cloudinary.com/ddpydxytb/image/upload/v1769330385/content_creation_cznfkq.png')] bg-cover bg-center"
+
   z="z-30"
   y={y3}
 />
+
 
 
 </div>
