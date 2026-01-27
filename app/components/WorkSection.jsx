@@ -49,7 +49,7 @@ const VideoCard = ({ project }) => {
 
 const WorkSection = () => {
   return (
-    <section className="p-6 bg-neutral-950">
+    <section className=" py-6 bg-neutral-950">
       <div className="mx-auto max-w-7xl">
 
         {/* Header */}
